@@ -226,7 +226,8 @@ const App = () => {
             </Section>
             <div className="text-center text-2xl mt-6">
                 <div>IN PROGRESS! Let's be agile!</div>
-                <div>Do you have any opinion or sugestion? <br/> Please, send me an email to <a href="mailto:hello@jedebarbieri.dev">hello@jedebarbieri.dev</a></div>
+                <div>Do you have any opinion or sugestion? <br /> Please, send me an email to <a href="mailto:hello@jedebarbieri.dev">hello@jedebarbieri.dev</a></div>
+                <div className="text-sm opacity-70 mt-6"><a href="https://trello.com/b/PTQbTUeo/jedebarbieridev" target="_blank" className="">View the Trello board</a></div>
             </div>
         </main>
     </div>
