@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+/* 🎨 VARIABLES CSS (en :root) */
+
+:root {
+
+
+  /* === Otros === */
+  /* color-scheme: light dark; */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@theme {
+
+  /* === Colores === */
+  --color-primary: #2e2e2e;
+  --color-secondary: #d4d4d4;
+  --color-accent: #ff6600;
+  --color-header: #57585a;
+  --color-header-bg: #57585a;
+  --color-primary-text: #000000;
+  --color-secondary-text: #a5a5a5;
+  --color-accent-text: #d4d4d4;
+  --color-bg: #242424;
+
+  /* === Tipografía === */
+  --font-size-base: 20px;
+  --font-family-italic: "Times New Roman", Times, serif;
+} 
+
+@layer utilities {
+  .text-primary {
+    color: var(--color-primary-text);
+  }
+  .text-secondary {
+    color: var(--color-secondary-text);
+  }
+  .text-accent {
+    color: var(--color-accent-text);
+  }
+}
+
+/* 💅 BASE STYLES */
+body {
+  margin: 0;
+  @apply px-4;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: var(--font-size-base);
+  background-color: var(--color-bg);
+
+  @media (max-width: 768px) {
+    padding: 0;
+  }
+}
+
+.page-container {
+  position: relative;
+  background: white;
+  color: var(--color-primary);
+  max-width: 1000px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100vh;
+
+  @media (max-width: 1024px) {
+    width: calc(100% - 2rem);
+    padding: 0px 1rem;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0px;
+    width: 100%;
+  }
+}
+
+b, strong {
+  @apply font-medium;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    color: var(--color-primary);
+    text-decoration: underline;
+  }
+
+  &.dark {
+    color: white;
+    opacity: 0.8;
+
+    &:hover {
+      color: var(--color-accent);
+      opacity: 1;
+    }
+  }
+}
