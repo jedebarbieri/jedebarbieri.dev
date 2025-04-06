@@ -1,3 +1,4 @@
+import Education from "./Education";
 import Section from "./Section";
 import WorkExperience from "./WorkExperience";
 
@@ -8,7 +9,7 @@ const App = () => {
             <h2 className="text-lg text-accent">Fullstack Web Developer | Laravel, API Design & UX-focused</h2>
             <p className="text-accent text-sm"><a className="dark" href="mailto:hello@jedebarbieri.dev" target="_blank">hello@jedebarbieri.dev</a> • Lisboa, Portugal</p>
         </header>
-        <main className="flex flex-col items-center px-12 py-6 text-lg leading-6 text-primary">
+        <main className="flex flex-col items-center px-12 py-6 text-lg leading-6 text-primary font-thin">
             <p className="mb-5">Fullstack developer specialized in <b>PHP</b> and <b>Laravel</b>, with a strong drive for building scalable, maintainable, and usercentric solutions. Passionate about crafting software that solves real-world problems and contributes to meaningful impact, I’m seeking challenges that allow me to grow while delivering value through clean, robust code.</p>
             <p className="text-center font-family-italic italic font-thin opacity-70 mb-3">I hold a degree in Computer Engineering and bring deep expertise in PHP development, particularly with Laravel, as well as solid experience in other backend technologies. My professional background spans information <b>systems analysis</b>, <b>requirement gathering</b>, <b>documentation</b>, and <b>project coordination</b>. I'm skilled at working collaboratively across teams to deliver high-quality software, and I take pride in translating complex business needs into clear, actionable development tasks. My strong <b>technical foundation</b> is matched by a practical, problem-solving mindset that helps bridge the gap between vision and execution.</p>
             <Section title="Work Experience">
@@ -171,7 +172,57 @@ const App = () => {
                 />
             </Section>
             <Section title="Education & Training">
-
+                <Education
+                    title="Bachelor’s Degree in Software Engineer"
+                    school="Pontificia Universidad Católica del Perú"
+                    startDate="August 2002"
+                    endDate="December 2012"
+                />
+                <Education
+                    title="Functional Analysis"
+                    school="Education IT"
+                    startDate="February 2021"
+                    endDate="March 2021"
+                />
+                <Education
+                    title="Android 8 Mobile Developer"
+                    school="Cibertec"
+                    startDate="June 2019"
+                    endDate="September 2019"
+                />
+                <Education
+                    title="Administrator Diploma"
+                    school="Zegel – IPAE"
+                    startDate="March 2015"
+                    endDate="September 2015"
+                />
+                <Education
+                    title="JavaScript Workshop"
+                    school="InfoPUC"
+                    startDate="February 2004"
+                    endDate="March 2004"
+                />
+            </Section>
+            <Section title="Skills">
+                <ul className="list-disc pl-8 text-base">
+                    <li className="pl-2">Programming Languages: PHP, JavaScript, Java, Visual Basic, C# .NET</li>
+                    <li className="pl-2">Frameworks: Laravel</li>
+                    <li className="pl-2">Web Technologies: HTML5, CSS, Bootstrap, REST, AJAX, XML, JSON</li>
+                    <li className="pl-2">Front-end Libraries: React JS, jQuery, Vue.js</li>
+                    <li className="pl-2">Design Tools: Figma, Adobe Photoshop, Illustrator</li>
+                    <li className="pl-2">Version Control: Git</li>
+                    <li className="pl-2">Containerization: Docker</li>
+                    <li className="pl-2">Project Management Tools: Jira, Notion, Atlassian tools, Trello</li>
+                    <li className="pl-2">Database: MySQL, SQLServer</li>
+                    <li className="pl-2">User Experience (UX) and User Interface (UI) design</li>
+                </ul>
+            </Section>
+            <Section title="Languages">
+                <ul className="list-disc pl-8 text-base">
+                    <li className="pl-2">Spanish: Mother language</li>
+                    <li className="pl-2">English: Fluent - C1</li>
+                    <li className="pl-2">Portuguese: Fluent - C1</li>
+                </ul>
             </Section>
             <div className="text-center text-2xl mt-6">
                 <div>IN PROGRESS!</div>
