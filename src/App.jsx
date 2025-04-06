@@ -225,7 +225,7 @@ const App = () => {
                 </ul>
             </Section>
             <div className="text-center text-2xl mt-6">
-                <div>IN PROGRESS!</div>
+                <div>IN PROGRESS! Let's be agile!</div>
                 <div>Do you have any opinion or sugestion? <br/> Please, send me an email to <a href="mailto:hello@jedebarbieri.dev">hello@jedebarbieri.dev</a></div>
             </div>
         </main>
