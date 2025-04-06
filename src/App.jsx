@@ -9,7 +9,7 @@ const App = () => {
             <h2 className="text-lg text-accent">Fullstack Web Developer | Laravel, API Design & UX-focused</h2>
             <p className="text-accent text-sm"><a className="dark" href="mailto:hello@jedebarbieri.dev" target="_blank">hello@jedebarbieri.dev</a> • Lisboa, Portugal</p>
         </header>
-        <main className="flex flex-col items-center px-12 py-6 text-lg leading-6 text-primary font-thin">
+        <main className="flex flex-col items-center px-12 py-6 text-lg leading-6 text-primary font-light">
             <p className="mb-5">Fullstack developer specialized in <b>PHP</b> and <b>Laravel</b>, with a strong drive for building scalable, maintainable, and usercentric solutions. Passionate about crafting software that solves real-world problems and contributes to meaningful impact, I’m seeking challenges that allow me to grow while delivering value through clean, robust code.</p>
             <p className="text-center font-family-italic italic font-thin opacity-70 mb-3">I hold a degree in Computer Engineering and bring deep expertise in PHP development, particularly with Laravel, as well as solid experience in other backend technologies. My professional background spans information <b>systems analysis</b>, <b>requirement gathering</b>, <b>documentation</b>, and <b>project coordination</b>. I'm skilled at working collaboratively across teams to deliver high-quality software, and I take pride in translating complex business needs into clear, actionable development tasks. My strong <b>technical foundation</b> is matched by a practical, problem-solving mindset that helps bridge the gap between vision and execution.</p>
             <Section title="Work Experience">
@@ -224,10 +224,10 @@ const App = () => {
                     <li className="pl-2">Portuguese: Fluent - C1</li>
                 </ul>
             </Section>
-            <div className="text-center text-2xl mt-6">
+            <div className="text-center text-xl mt-6">
                 <div>IN PROGRESS! Let's be agile!</div>
                 <div>Do you have any opinion or sugestion? <br /> Please, send me an email to <a href="mailto:hello@jedebarbieri.dev">hello@jedebarbieri.dev</a></div>
-                <div className="text-sm opacity-70 mt-6"><a href="https://trello.com/b/PTQbTUeo/jedebarbieridev" target="_blank" className="">View the Trello board</a></div>
+                <div className="text-base opacity-70 mt-6"><a href="https://trello.com/b/PTQbTUeo/jedebarbieridev" target="_blank" className="">View the Trello board</a></div>
             </div>
         </main>
     </div>
