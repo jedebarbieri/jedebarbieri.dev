@@ -15,8 +15,22 @@ const App = () => {
                 <Hero />
 
                 <main className="px-6 py-6">
-
                     <Section title="Work Experience">
+                        <WorkExperience
+                            position="Airbnb Claims Specialist"
+                            company="FoundEver Portugal"
+                            location="Lisbon, Portugal"
+                            startDate="May 2025"
+                            endDate="Present"
+                            description={
+                                <ul className="list-disc pl-8">
+                                    <li className="pl-2">Handle complex claims within the AirCover workflow, balancing policy constraints with user expectations in high-pressure scenarios.</li>
+                                    <li className="pl-2">Translate ambiguous real-world issues into structured decisions, ensuring consistent and fair outcomes.</li>
+                                    <li className="pl-2">Communicate complex limitations clearly, managing conflict and maintaining trust in negative-resolution cases.</li>
+                                    <li className="pl-2">Strengthened core soft skills critical for senior engineering roles: stakeholder communication, expectation management, and decision-making under uncertainty.</li>
+                                </ul>
+                            }
+                        />
                         <WorkExperience
                             position="Fullstack Developer"
                             company="Enzen Portugal"
