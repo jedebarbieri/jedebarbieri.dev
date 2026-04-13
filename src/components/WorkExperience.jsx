@@ -1,10 +1,7 @@
-import { useReveal } from '../hooks/useReveal';
-
 const WorkExperience = ({ position, company, location, startDate, endDate, description }) => {
-  const ref = useReveal();
 
   return (
-    <div ref={ref} className="card">
+    <div className="card" data-aos="fade-up">
       <h4>{position}</h4>
       <div className="meta">
         <strong>{company}</strong> — {location}

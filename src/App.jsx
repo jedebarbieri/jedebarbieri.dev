@@ -1,3 +1,7 @@
+
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import Hero from "./components/Hero";
 import Section from "./components/Section";
 import WorkExperience from "./components/WorkExperience";
@@ -6,13 +10,22 @@ import Skills from "./components/Skills";
 import Languages from "./components/Languages";
 import Footer from "./components/Footer";
 import "./style.css";
+import ProjectCard from "./components/ProjectCard";
 
 const App = () => {
+    useEffect(() => {
+        Aos.refresh();
+        Aos.init({
+            duration: 800,
+            easing: "ease-in-out",
+        });
+    }, []);
     return (
         <div>
-            <div className="page-container">
 
-                <Hero />
+            <Hero />
+
+            <div className="page-container">
 
                 <main className="px-6 py-6">
                     <Section title="Work Experience">
@@ -23,11 +36,11 @@ const App = () => {
                             startDate="May 2025"
                             endDate="Present"
                             description={
-                                <ul className="list-disc pl-8">
-                                    <li className="pl-2">Handle complex claims within the AirCover workflow, balancing policy constraints with user expectations in high-pressure scenarios.</li>
-                                    <li className="pl-2">Translate ambiguous real-world issues into structured decisions, ensuring consistent and fair outcomes.</li>
-                                    <li className="pl-2">Communicate complex limitations clearly, managing conflict and maintaining trust in negative-resolution cases.</li>
-                                    <li className="pl-2">Strengthened core soft skills critical for senior engineering roles: stakeholder communication, expectation management, and decision-making under uncertainty.</li>
+                                <ul>
+                                    <li>Handle complex claims within the AirCover workflow, balancing policy constraints with <b>user expectations</b> in high-pressure scenarios.</li>
+                                    <li>Translate ambiguous real-world issues into structured decisions, ensuring consistent and fair outcomes.</li>
+                                    <li><b>Communicate</b> complex limitations clearly, managing conflict and maintaining trust in negative-resolution cases.</li>
+                                    <li>Strengthened core soft skills critical for senior engineering roles: stakeholder communication, expectation management, and decision-making under uncertainty.</li>
                                 </ul>
                             }
                         />
@@ -38,12 +51,12 @@ const App = () => {
                             startDate="October 2023"
                             endDate="February 2025"
                             description={
-                                <ul className="list-disc pl-8">
-                                    <li className="pl-2">Leadership in the development of a comprehensive ERP system based on Laravel 10 and React, structured as a Restful API.</li>
-                                    <li className="pl-2">Development of key modules such as Procurement, Budgets, Operations & Maintenance, and Assets Management, optimizing critical company processes.</li>
-                                    <li className="pl-2">Creation of a strategic roadmap based on the analysis of business processes, prioritizing automation and alignment with business objectives.</li>
-                                    <li className="pl-2">Embedded software development in C++ for solar panel control using MCU with STM32, integrated into the web platform for real-time management.</li>
-                                    <li className="pl-2">Implementation of agile methodologies to ensure fast and high-quality deliveries.</li>
+                                <ul>
+                                    <li>Leadership in the development of a comprehensive ERP system based on <b>Laravel</b> 10 and <b>React</b>, structured as a <b>Restful API</b>.</li>
+                                    <li>Development of key modules such as Procurement, Budgets, Operations & Maintenance, and Assets Management, optimizing critical company processes.</li>
+                                    <li>Creation of a <b>strategic roadmap</b> based on the analysis of business processes, prioritizing automation and alignment with business objectives.</li>
+                                    <li>Embedded <b>software development in C++</b> for solar panel control using MCU with STM32, integrated into the web platform for real-time management.</li>
+                                    <li>Implementation of agile methodologies to ensure fast and high-quality deliveries.</li>
                                 </ul>
                             }
                         />
@@ -54,12 +67,12 @@ const App = () => {
                             startDate="January 2023"
                             endDate="July 2023"
                             description={
-                                <ul className="list-disc pl-8">
-                                    <li className="pl-2">Co-founded and managed BigRock Designs, a digital solutions company leading a team of 4 members.</li>
-                                    <li className="pl-2">Successfully delivered commercial websites on Squarespace, Shopify and WordPress platforms.</li>
-                                    <li className="pl-2">Conducted marketing campaigns on Google Ads and Meta.</li>
-                                    <li className="pl-2">Managed client relationships, gathering requirements and presenting results.</li>
-                                    <li className="pl-2">Utilized Jira in advanced mode for efficient project planning, budgeting, and advanced team coordination.</li>
+                                <ul>
+                                    <li>Co-founded and managed BigRock Designs, a digital solutions company leading a team of 4 members.</li>
+                                    <li>Successfully delivered commercial websites on Squarespace, <b>Shopify</b> and <b>WordPress</b> platforms.</li>
+                                    <li>Conducted marketing campaigns on <b>Google Ads</b> and <b>Meta</b>.</li>
+                                    <li>Managed client relationships, gathering requirements and presenting results.</li>
+                                    <li>Utilized <b>Jira</b> in advanced mode for efficient project planning, budgeting, and advanced team coordination.</li>
                                 </ul>
                             }
                         />
@@ -70,13 +83,13 @@ const App = () => {
                             startDate="July 2022"
                             endDate="December 2022"
                             description={
-                                <ul className="list-disc pl-8">
-                                    <li className="pl-2">Write detailed user stories based on user and stakeholder requirements.</li>
-                                    <li className="pl-2">Specify functionality details to define the scope of user stories.</li>
-                                    <li className="pl-2">Collaborate with the development team to address any queries.</li>
-                                    <li className="pl-2">Supervise UX/UI design and review progress in meetings.</li>
-                                    <li className="pl-2">Identify metrics to measure the success of user story development.</li>
-                                    <li className="pl-2">Analyze user response and behavior after software deployments.</li>
+                                <ul>
+                                    <li>Write detailed <b>user stories</b> based on user and <b>stakeholder requirements</b>.</li>
+                                    <li>Specify <b>functionality details</b> to define the scope of user stories.</li>
+                                    <li>Collaborate with the development team to address any queries.</li>
+                                    <li>Supervise UX/UI design and review progress in meetings.</li>
+                                    <li>Identify metrics to measure the success of user story development.</li>
+                                    <li>Analyze user response and behavior after software deployments.</li>
                                 </ul>
                             }
                         />
@@ -87,13 +100,13 @@ const App = () => {
                             startDate="March 2021"
                             endDate="June 2022"
                             description={
-                                <ul className="list-disc pl-8">
-                                    <li className="pl-2">Evaluate the viability of requested requirements and proposed solutions.</li>
-                                    <li className="pl-2">Design and propose innovative solutions while considering technical debt.</li>
-                                    <li className="pl-2">Document requirement specifications and technical solutions.</li>
-                                    <li className="pl-2">Collaborate with the development team to agree on technical software designs.</li>
-                                    <li className="pl-2">Perform project management functions including planning and monitoring progress.</li>
-                                    <li className="pl-2">Validate deliverable quality.</li>
+                                <ul>
+                                    <li>Evaluate the viability of requested requirements and proposed solutions.</li>
+                                    <li>Design and propose <b>innovative solutions</b> while considering technical debt.</li>
+                                    <li>Document requirement specifications and <b>technical solutions</b>.</li>
+                                    <li>Collaborate with the development team to agree on <b>technical software designs</b>.</li>
+                                    <li>Perform <b>project management</b> functions including planning and monitoring progress.</li>
+                                    <li>Validate deliverable quality.</li>
                                 </ul>
                             }
                         />
@@ -104,13 +117,13 @@ const App = () => {
                             startDate="June 2019"
                             endDate="February 2021"
                             description={
-                                <ul className="list-disc pl-8">
-                                    <li className="pl-2">Developed applications for banks and clients to manage construction loans.</li>
-                                    <li className="pl-2">Identified and resolved bugs, contributing to continuous improvement.</li>
-                                    <li className="pl-2">Developed a messenger module for communication among loan participants using the AWS services.</li>
-                                    <li className="pl-2">Led the restructuring of files and documents for improved security.</li>
-                                    <li className="pl-2">Designed and developed a web scraping module in GO language.</li>
-                                    <li className="pl-2">Proposed code improvements for scalability and security enhancements.</li>
+                                <ul>
+                                    <li>Developed applications for banks and clients to manage construction loans.</li>
+                                    <li><b>Identified and resolved bugs</b>, contributing to continuous improvement.</li>
+                                    <li>Developed a messenger module for communication among loan participants using the <b>AWS services</b>.</li>
+                                    <li>Led the restructuring of files and documents for improved security.</li>
+                                    <li>Designed and developed a web scraping module in <b>GO</b> language.</li>
+                                    <li>Proposed code improvements for <b>scalability</b> and <b>security enhancements</b>.</li>
                                 </ul>
                             }
                         />
@@ -121,10 +134,10 @@ const App = () => {
                             startDate="March 2019"
                             endDate="May 2019"
                             description={
-                                <ul className="list-disc pl-8">
-                                    <li className="pl-2">Developed a module to process sales and calculate commissions.</li>
-                                    <li className="pl-2">Implemented the project using Laravel and background workers.</li>
-                                    <li className="pl-2">Managed large volumes of data efficiently.</li>
+                                <ul>
+                                    <li>Developed a module to process sales and calculate commissions.</li>
+                                    <li>Implemented the project using <b>Laravel</b> and background workers.</li>
+                                    <li>Managed large volumes of data efficiently.</li>
                                 </ul>
                             }
                         />
@@ -135,13 +148,13 @@ const App = () => {
                             startDate="March 2013"
                             endDate="February 2019"
                             description={
-                                <ul className="list-disc pl-8">
-                                    <li className="pl-2">Worked on various PHP projects for clients in different industries.</li>
-                                    <li className="pl-2">Managed the complete software development lifecycle.</li>
-                                    <li className="pl-2">Gathered client requirements and provided budget estimates.</li>
-                                    <li className="pl-2">Managed time, resources, and risks.</li>
-                                    <li className="pl-2">Designed databases and developed all layers of the system.</li>
-                                    <li className="pl-2">Ensured a seamless user experience with responsive design.</li>
+                                <ul>
+                                    <li>Worked on various <b>PHP</b> projects for clients in different industries.</li>
+                                    <li>Managed the complete software development lifecycle.</li>
+                                    <li>Gathered <b>client requirements</b> and provided budget estimates.</li>
+                                    <li>Managed time, resources, and risks.</li>
+                                    <li><b>Designed databases</b> and developed all layers of the system.</li>
+                                    <li>Ensured a seamless user experience with responsive design.</li>
                                 </ul>
                             }
                         />
@@ -152,10 +165,10 @@ const App = () => {
                             startDate="December 2011"
                             endDate="February 2013"
                             description={
-                                <ul className="list-disc pl-8">
-                                    <li className="pl-2">Developed web pages using frameworks, applications, and reports.</li>
-                                    <li className="pl-2">Utilized Java (Sean Framework), HTML, CSS, JQuery, and ActionScript 3.0.</li>
-                                    <li className="pl-2">Created SQLServer reports and CrystalReports.</li>
+                                <ul>
+                                    <li>Developed web pages using frameworks, applications, and reports.</li>
+                                    <li>Utilized Java (Sean Framework), HTML, CSS, JQuery, and ActionScript 3.0.</li>
+                                    <li>Created SQLServer reports and CrystalReports.</li>
                                 </ul>
                             }
                         />
@@ -166,10 +179,10 @@ const App = () => {
                             startDate="July 2011"
                             endDate="November 2011"
                             description={
-                                <ul className="list-disc pl-8">
-                                    <li className="pl-2">Oversaw and tracked systems incidents, creating weekly reports.</li>
-                                    <li className="pl-2">Monitored project progress and improved communication processes.</li>
-                                    <li className="pl-2">Enhanced reporting of project budget execution.</li>
+                                <ul>
+                                    <li>Oversaw and tracked systems incidents, creating weekly reports.</li>
+                                    <li>Monitored project progress and improved communication processes.</li>
+                                    <li>Enhanced reporting of project budget execution.</li>
                                 </ul>
                             }
                         />
@@ -180,16 +193,15 @@ const App = () => {
                             startDate="January 2009"
                             endDate="August 2010"
                             description={
-                                <ul className="list-disc pl-8">
-                                    <li className="pl-2">Developed interactive games, postcards, presentations, and minisites in ActionScript Flash.</li>
-                                    <li className="pl-2">Utilized XML for automated solutions in animated banners and campaigns.</li>
-                                    <li className="pl-2">Conducted analysis of web pages and content management systems.</li>
-                                    <li className="pl-2">Developed solutions using VBA Macros.</li>
+                                <ul>
+                                    <li>Developed interactive games, postcards, presentations, and minisites in ActionScript Flash.</li>
+                                    <li>Utilized XML for automated solutions in animated banners and campaigns.</li>
+                                    <li>Conducted analysis of web pages and content management systems.</li>
+                                    <li>Developed solutions using VBA Macros.</li>
                                 </ul>
                             }
                         />
                     </Section>
-
                     <Section title="Education">
                         <Education
                             title="Bachelor’s Degree in Software Engineer"
@@ -256,7 +268,27 @@ const App = () => {
                             ]}
                         />
                     </Section>
+                    <Section title="Projects">
+                        <p className="text-regular mb-8">
+                            A selection of projects that demonstrate my skills and experience in web development, showcasing a range of technologies and solutions.
+                        </p>
 
+                        <ProjectCard
+                            title="Solar Panel Enterprise ERP"
+                            description="Laravel 10 + React.js. API Restful. Fullstack desarrollado por mí, incluyendo microcontroladores STM32 para controlar paneles solares con C++."
+                            techs={["PHP", "Laravel", "React", "C++", "PrimeReact", "Vite"]}
+                        />
+                        <ProjectCard
+                            title="Dulce Jardín"
+                            description="Tienda de arreglos frutales. Flujo de compra personalizado con programación de entrega y dedicatoria. CMS a medida."
+                            techs={["PHP", "jQuery", "AJAX"]}
+                        />
+                        <ProjectCard
+                            title="Manjares de Casa"
+                            description="Es una tienda de bombones y chocolates y dulces variados. Con un diseño simple pero creativo. Tiene su propio CMS a medida y opción para descargar el listado completo de productos en excel."
+                            techs={["PHP", "jQuery", "AJAX"]}
+                        />
+                    </Section>
                 </main>
             </div>
             <Footer />
